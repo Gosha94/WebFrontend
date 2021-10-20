@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Кастомная HTML форма</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    </head>
+    <body>
+        <!-- <form action="#" method="post" enctype="multipart/form-data"> -->
+        <form action="#" method="get">
+            <div>
+                <input tabindex="1" placeholder="Логин" type="text" name="userName" value="" />
+            </div>
+            <div>
+                <input disabled type="password" name="userPass" value="" />
+            </div>
+            <div>
+                <p><input tabindex="2" checked type="radio" name="coldDrinks" value="" /> Молоко </p>
+                <p><input tabindex="2" type="radio" name="coldDrinks" value="" /> Томатный сок </p>
+            </div>
+            <br />
+            <div>
+                <p><input type="radio" name="hotDrinks" value="" /> Кофе </p>
+                <p><input checked type="radio" name="hotDrinks" value="" /> Чай </p>
+            </div>
+            <br />
+            <div>
+                <p><input type="checkbox" name="isHaveCar" value="yes" /> Наличие автомобиля </p>
+                <p><input checked type="checkbox" name="isHaveCar2" value="yes" /> Наличие автомобиля 2 </p>
+                <p><input type="checkbox" name="isHaveCar3" value="yes" /> Наличие автомобиля 3 </p>
+                <p><input checked type="checkbox" name="isHaveCar4" value="yes" /> Наличие автомобиля 4 </p>
+            </div>
+            <br />
+            <div>
+                <p><input type="file" name="photo" /></p>
+            </div>
+            <br />
+            <div>
+                <textarea name="bigTextArea"></textarea>
+            </div>
+            <br />
+            <div>
+                <select multiple name="color">
+                    <option value="red">Красный</option>
+                    <option selected value="green">Зеленый</option>
+                    <option value="yellow">Желтый</option>
+                </select>
+            </div>
+            <br />
+            <div>
+                <!-- Кнопка с типом Submit отправляет все данные формы на сервер -->
+                <button type="submit">Отправить данные</button>
+                <!-- Кнопка с типом Reset Переводит значения на форме в первоначальный вид -->
+                <button type="reset">Откатить форму на дефолт</button>            
+            </div>
+        </form>
+    </body>
+</html>

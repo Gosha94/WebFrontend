@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Первая HTML странца</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    </head>
+    <body>
+        <header>
+            <!-- Блочные элементы, занимают всю ширину экрана -->
+            <div>Это Хедер</div>            
+            <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto perferendis eveniet nostrum dolores dolorum repellat! Unde fugiat, neque ab aliquam dicta quo velit at vel quaerat aut tempora adipisci repellat facere, dolore ullam deserunt tenetur quas quia laudantium. Accusantium itaque ea officia libero quos corporis nostrum eveniet tempora sint suscipit.</div>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatum illo dolorem distinctio a! Exercitationem ab cupiditate minus tenetur ex explicabo quod error non et ea! Autem incidunt neque veniam!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dignissimos harum velit aliquid nemo perferendis hic, qui culpa quidem ex quo corrupti illum suscipit adipisci aperiam pariatur consectetur sit voluptas.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis consequuntur reiciendis eligendi asperiores ipsum cupiditate, quos delectus id officiis eum nesciunt! Id repudiandae alias magni ducimus amet doloribus architecto enim.</p>
+            
+            <!-- Это строчные элементы, ширина подстраивается по размеру текста в элементе,   -->
+            <span>Это первый элемент span</span>
+            <span>Это второй элемент span, следует сразу за первым без переноса строки, т.к. занимает только отведенную под внутренний текст ширину строки</span>
+            <a href=""></a>
+            <!-- Открытие ссылки в новом окне -->
+            <a href="http://google.com" target="_blank">зайти в гугол</a>
+
+            <img src="img/JonWick.jpg" alt="Картинка не загрузилась :(">
+            
+            <ul>
+                <li>Маркированный Тег Ли</li>
+                <li>Маркированный Тег Ли</li>
+                <li>Маркированный Тег Ли</li>
+            </ul>
+            <ol>
+                <li>Нумерованный Тег Ли</li>
+                <li>Нумерованный Тег Ли</li>
+                <li>Нумерованный Тег Ли</li>
+            </ol>
+            
+            <br />
+
+
+            <!-- Можно вкладывать блочные в блочные и строчные в блочные элементы -->
+            <!-- Нельзя вкладывать блочные в строчные и строчные в строчные элементы -->
+
+            <!-- Неверное применение -->
+            <span>
+                <p></p>
+                <h2></h2>
+                <div></div>
+            </span>
+
+            <!-- Верное применение -->
+            <div>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+
+
+
+        </header>        
+        <nav>Это Меню</nav>
+        <footer>Это Футер</footer>
+    </body>
+</html>

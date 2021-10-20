@@ -1,0 +1,96 @@
+/* Применяется ко всем элементам страницы */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Меняется подсчет ширины блока в браузерах для удобства верстки */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Убираем линии обводки элементов при фокусе у браузеров */
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+
+/* Делаем теги HTML5 блочными */
+nav, footer, header, aside {display: block;}
+
+/* Запрет на непроизвольное изменение шрифта в браузерах */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Включаем у элементов форм наследование шрифта, по умолчанию не наследуют его */
+input, button, textarea {font-family: inherit;}
+
+/* Убираем стили ссылок, списков, кнопок и т.д. */
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding:0; border:0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+/* Обнуляем стили заголовков h1-h6 */
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+/* -------------------------------------- */
+
+.example-block {
+/* Верхний, Правый, Нижний, Левый края отступов */
+    /* padding: 10px 20px 30px 5px; */
+    /* Верхний, Правый==Левый, Нижний края отступов */
+    /* padding: 10px 20px 30px; */
+    /* Верхний==Нижний, Правый==Левый края отступов */
+    /* padding: 10px 20px; */
+    /* Все 4 стороны края равны */
+    /* padding: 10px; */
+
+    /* Внешний отступ margin задается аналогично, только можно указывать отрицательные значения */
+    /* margin: 10px -10px; */
+
+    /* Фиксированная ширина блочного элемента */
+    /* width: 500px; */
+
+    /* Ограничивает максимальную ширину элемента, при превышении размера у родительского элемента больше макс значение не вырастет */
+    /* max-width: 700px; */
+    /* Ограничивает минимальную ширину элемента, меньше быть не может*/
+    /* min-width: 150px; */
+
+    /* height: 50%; */
+    /* Контролирует переполнение блочного элемента данными */
+    overflow: auto;
+    max-height: 50px;
+    border: 1px solid #000;
+}
+
+.example-string {
+    width: 500px;
+    /* width, height, margin, padding не работают со строчными элементами! Кроме img */
+    
+    /* Преобразование строчного элемента в блочный */
+    /* display: block; */
+    /* Преобразование блочного элемента в строчный */
+    display: inline;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.example-image {
+    width: 100%;
+    max-width: 900px;
+    min-width: 600px;
+
+}

@@ -1,0 +1,27 @@
+/*
+    Таблица CSS стилей
+    !Нижние свойства перекрывают верхние
+*/
+
+
+/* Все элементы с классом bigRed */
+/* .bigRed{
+    font-size: 20px;
+    color:red;
+} */
+
+/* Все элементы span с классом bigRed */
+/* span.bigRed{
+    font-size: 30px;
+    color:greenyellow;
+} */
+
+/* Только span-ы внутри класса bigRed */
+/* .bigRed span{
+    color:blue;
+} */
+
+/* Только элементы, которые находятся на первом уровне вложенности в классе */
+.block>p{
+    color:blue;
+}
