@@ -94,21 +94,15 @@ body {
 	padding: 30px;
 }
 
-.block {
+.standard-list {
+	
 }
+.hovered-list {
+	
+}
+.fullstory-button {
 
-.block p {
-	font-size: 18px;
-	/* Межстрочный интервал */
-	line-height: 24px;
-	margin: 0 0 20px 0;
 }
+.input-text {
 
-.link {
-}
-.textInput {
-}
-.textButton {
-}
-.list {
 }
