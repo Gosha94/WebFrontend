@@ -1,0 +1,150 @@
+/* Применяется ко всем элементам страницы */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* Меняется подсчет ширины блока в браузерах для удобства верстки */
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Убираем линии обводки элементов при фокусе у браузеров */
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* Делаем теги HTML5 блочными */
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+/* Запрет на непроизвольное изменение шрифта в браузерах */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Включаем у элементов форм наследование шрифта, по умолчанию не наследуют его */
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+/* Убираем стили ссылок, списков, кнопок и т.д. */
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+/* Обнуляем стили заголовков h1-h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/* -------------------------------------- */
+
+body {
+	padding: 30px;
+}
+
+.text {
+	font-size: 24px;
+	line-height: 33px;
+	margin: 0 0 30px 0;
+}
+
+/* Стиль первой строки текста, независимо от рамера этой строки */
+.text:first-line {
+	color: green;
+}
+
+/* Стиль первой буквы текста */
+.text::first-letter {
+	color: red;
+	font-size: 50px;
+}
+
+.list {
+}
+
+.list li {
+	font-size: 24px;
+	margin: 0 0 20px 0;
+}
+
+.list li:before {
+	/* Контент обязательно указывать, даже пустой!!! */
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.list li:after {
+	content: "!!";
+}
+
+/*  */
+.list li:hover:before {
+	border-color: yellowgreen;
+}
+
+input {
+	height: 50px;
+	font-size: 20px;
+	color: rgb(235, 167, 167);
+	padding: 0 15px;
+	width: 300px;
+	border: 2px solid rgb(235, 167, 167);
+	border-radius: 35px;
+}

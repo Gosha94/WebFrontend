@@ -91,18 +91,98 @@ h6 {
 /* -------------------------------------- */
 
 body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
 	padding: 30px;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+32,eeeeee+46,eeeeee+46,eeeeee+59,cccccc+100 */
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(
+		top,
+		#eeeeee 0%,
+		#eeeeee 32%,
+		#eeeeee 46%,
+		#eeeeee 46%,
+		#eeeeee 59%,
+		#cccccc 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		#eeeeee 0%,
+		#eeeeee 32%,
+		#eeeeee 46%,
+		#eeeeee 46%,
+		#eeeeee 59%,
+		#cccccc 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#eeeeee 0%,
+		#eeeeee 32%,
+		#eeeeee 46%,
+		#eeeeee 46%,
+		#eeeeee 59%,
+		#cccccc 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 }
 
-.standard-list {
-	
+li {
+	margin: 0 0 10px 0;
+	background: url(../img/icons/CheckGreen.png) left no-repeat;
+	padding: 0 0 0 30px;
 }
-.hovered-list {
-	
+
+li:hover {
+	background: url(../img/icons/CheckRed.png) left no-repeat;
+	font-weight: 600;
+	color: rgb(180, 7, 39);
 }
+
+.pseudostyled-list li:nth-child(1) {
+	text-decoration: line-through;
+}
+
+.pseudostyled-list li:nth-child(2) {
+	font-weight: 700;
+}
+
+.pseudostyled-list li:nth-child(3) {
+	font-style: italic;
+}
+
+.pseudostyled-list li:nth-child(4) {
+	text-transform: uppercase;
+}
+
+.element {
+	margin: 0 0 30px 0;
+}
+
 .fullstory-button {
-
+	text-transform: uppercase;
+	color: white;
+	font-size: 12px;
+	border-radius: 15px;
+	background-color: rgba(107, 192, 164, 0.76);
+	width: 150px;
+	height: 30px;
+	box-shadow: 0 0 20px rgb(144, 224, 194);
 }
-.input-text {
 
+.fullstory-button:hover {
+	background-color: rgba(24, 65, 50, 0.877);
+	box-shadow: none;
+}
+
+.fullstory-button:active {
+	background-color: rgba(97, 97, 97, 0.877);
+}
+
+.buttonarrow-image {
+	width: 15px;
+	height: 15px;
+}
+
+.input-text {
 }
