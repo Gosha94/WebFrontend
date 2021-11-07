@@ -1,0 +1,40 @@
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato: 400, 300, 700, 900);
+
+body {
+	font-family: Lato;
+}
+
+.about {
+	&__body {
+	}
+
+	&__header {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__row {
+	}
+
+	&__column {
+	}
+}
+
+.title {
+}
+
+.item-about {
+	&__icon {
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+}
